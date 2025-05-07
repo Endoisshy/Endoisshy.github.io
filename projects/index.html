@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Erik Pfankuch</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="logo-title">
+      <img src="/images/dendosec_logo.png" alt="DendoSec logo" class="logo">
+      <h1>Erik Pfankuch OSCP</h1>
+    </div>
+    <p class="text-highlight">Cybersecurity Consultant/Engineer • Penetration Tester • HackTheBox Enthusiest</p>
+    <div class="nav-buttons">
+      <a href="/" class="nav-button">About</a>
+      <a href="/projects/" class="nav-button">Projects</a>
+      <a href="/report/" class="nav-button">Report</a>
+      <a href="/contact/" class="nav-button">Contact</a>
+      <a href="https://dendosec.medium.com" target="_blank" class="nav-button">Blog</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="text-highlight">Projects 
+    <nav class="section-nav">
+      <a href="#scrape2dns">Scrape2dns</a>
+      <a href="#Home Lab Active Directory">Home Lab Active Directory</a>
+      <a href="#Endoisshy's RPG">Endoisshy's RPG</a>
+      <a href="#This Website">This Website</a>
+    </nav>
+    <div class="project">
+      <h3 id = "scrape2dns" class="text-highlight">Web Scraper to Subdomain DNS Enumeration </h3>
+      <p class="text-highlight">This project demonstrates a custom-built Bash script designed to generate a focused wordlist from a target webpage and use it to perform precise subdomain enumeration and DNS record etraction. Useful for when tools like cewl or amass may not be avaiable in restricted environments.</p>
+      <a href="https://github.com/Endoisshy/scrape2dns" target="_blank"><img src="https://img.shields.io/badge/View_on-GitHub-24292e?logo=github&logoColor=white&style=for-the-badge" alt="View on GitHub"></a>
+    </div>
+    <div class="project">
+      <h3 id="Home Lab Active Directory" class="text-highlight">Building a Virtualized Lab with pfSense, Active Directory, and IDS/IPS</h3>
+      <p class="text-highlight">In this project, I designed and deployed a fully virtualized lab environment using Proxmox VE to simulate a real-world enterprise network. The goal was to create an isolated domain infrastructure complete with firewalling, routing, internal DNS, domain services, and network intrusion detection/prevention. This lab runs entirely within my home network and allows for realistic testing and experimentation. It is also home to a Ubuntu server running my discord bot via Docker. Please visit my blog to read all the fun details!</p>
+      <a href="https://dendosec.medium.com/building-a-virtualized-lab-with-pfsense-active-directory-and-network-security-b1325bbcb8d1" target="_blank" class="nav-button">View on the Dendosec Blog</a>
+    </div>
+    <div class="project">
+      <h3 id="Endoisshy's RPG" class="text-highlight">Endoisshy's RPG Python Discord Bot</h3>
+      <p class="text-highlight">I developed a custom Discord multiplayer RPG bot in python that allows users to create characters, choose from unique classes, and interact through a stat-based progression system. Players can duel each other or slay monsters. All user data is persisted in a MySQL database using secure, parameterized queries. Built with discord.py and integrated with PyMySQL, the bot supports asynchronous command handling, real-time stat tracking, and seamless db communication. Overall this demonstrates my skills in Python, SQL and general database integration, and secure coding/code review.</p>
+      <p class="text-highlight">The bot is live and can be found here! <a href="https://discord.com/oauth2/authorize?client_id=535946318124810240"target="_blank" class="nav-button">Endoisshy's RPG</a></p>
+      <p class="text-highlight">A sample of most core functionality is available on my GitHub below!</p>
+      <a href="https://github.com/Endoisshy/Endoisshy-sRPG.py_Sample" target="_blank"><img src="https://img.shields.io/badge/View_on-GitHub-24292e?logo=github&logoColor=white&style=for-the-badge" alt="View on GitHub"></a>
+    </div>
+    <div class="project">
+      <h3 id = "This Website" class="text-highlight">This Website!</h3>
+      <p class="text-highlight">My goal for this project was to create a portfolio website from scratch without the use of any web frameworks. The code can be found on my GitHub below!</p>
+      <a href="https://github.com/Endoisshy/Endoisshy.github.io" target="_blank"><img src="https://img.shields.io/badge/View_on-GitHub-24292e?logo=github&logoColor=white&style=for-the-badge" alt="View on GitHub"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="text-black">&copy; 2025 Dendosec. All rights reserved.</p>
+  </footer>
+</body>
+</html>

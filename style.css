@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+  background-image: url('/images/background.jpg');
+  min-height: 100vh;
+}
+
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+  background-image: url('/images/background.jpg');
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.site-header {
+  background-color: #1a0029; /* DendoSec purple */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', monospace;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+h1 {
+  font-size: 48px;
+  color: #e63946; /* DendoSec red */
+  margin: 0;
+}
+
+
+header {
+
+  background: #1f1f1f;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+
+nav a {
+  text-decoration: none;     /* removes underline */
+  color: #b5b0ac;              /* sets link color */
+}
+
+header a:visited {
+  color: #b5b0ac;              /* ensures visited links stay the same color */
+}
+nav a:hover {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nav-button {
+  background-color: #24292e;       /* GitHub dark gray */
+  color: #b5b0ac;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #444c56;       /* Slightly lighter on hover */
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a0029;
+  transition: box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+  text-decoration: none; 
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #e63946;
+}
+
+
+.project {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #1e1e1e;
+  border-left: 6px solid #e63946;
+  border-top: 2px solid #e63946; 
+  border-right: 2px solid #e63946;
+  border-bottom: 2px solid #e63946;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a0029;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+.email a {
+  display: inline-flex;
+  /*gap: 1em;*/
+  margin-top: 2em;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none; 
+}
+
+.email i {
+  width: 32px;
+  height: 32px;
+  /*margin-right: 10px;*/
+  color: white !important;
+  /*font-size: 2rem !important;*/
+  visibility: visible !important; /* <-- Ensures visibility on dark backgrounds */
+  transition: color 0.3s ease;
+}
+.social-links {
+  display: flex;
+  /*gap: 1em;*/
+  margin-top: 2em;
+  align-items: center;
+  justify-content: flex-start;
+}
+.email a .text-highlight {
+  text-decoration: none !important;
+}
+
+.social-links i {
+  width: 48px;
+  height: 48px;
+  color: white !important;
+  font-size: 2rem !important;
+  visibility: visible !important; /* <-- Ensures visibility on dark backgrounds */
+  transition: color 0.3s ease;
+}
+
+
+.text-highlight {
+  color: #b5b0ac; /* Text */
+  text-decoration: none; 
+}
+
+.text-black {
+  color: #070707; /* Text */
+}
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px;
+  /*background-color: #121212;*/
+}
+
+.section-nav a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #e63e3e; /* Your brand color */
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.section-nav a:hover {
+  background-color: #e63e3e; /* Your accent red */
+  color: #fff;
+}
